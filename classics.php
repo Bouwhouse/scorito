@@ -5,7 +5,7 @@ declare(strict_types = 1);
 use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
-define('RACE_ID', 281);
+define('RACE_ID', 302);
 
 require_once('vendor/autoload.php');
 require_once('ProCyclingStatsFetcher.php');
@@ -84,3 +84,4 @@ class ScoritoClassicsGame {
         return $this->fetcher->fetchRiders($filtered, true, true, true);
     }
 }
+
